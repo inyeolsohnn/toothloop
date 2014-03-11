@@ -1,0 +1,100 @@
+@CHARSET "ISO-8859-1";
+div.header
+{
+
+	  background: #d8d8d8;
+  color: #333333;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin:auto;  
+  outline:0;
+  width:100%;
+  max-width:1030px;
+  display:none;
+}
+span.error
+{
+	color:red;
+}
+
+/******************************************************************
+* Larger Mobile Devices
+* This is for devices like the Galaxy Note or something that's 
+* larger than an iPhone but smaller than a tablet. 
+******************************************************************/
+@media only screen and (min-width: 481px) {
+  .ls-wrapper .liquid-slider .panel img{
+    /* Example */
+    /*
+    width:24%;
+    margin:2px;
+    */
+  }
+  	
+
+}
+
+/******************************************************************
+* Tablet & Smaller Laptops
+* This will include tablets and some netbooks.
+******************************************************************/
+@media only screen and (min-width: 768px) {
+
+  .ls-wrapper .liquid-slider .panel img{
+    /* Example */
+    /*
+    width:24%;
+    */
+  }
+  .ls-responsive .liquid-slider .panel .panel-wrapper {
+    padding: 20px 35px;
+  }
+}
+
+/******************************************************************
+* DESKTOP 
+* This is the average viewing window. So Desktops, Laptops, and 
+* in general anyone not viewing on a mobile device. Here's where
+* you can add resource intensive styles.
+******************************************************************/
+@media only screen and (min-width: 1030px) {
+	.mobile-menu
+	{
+		display:none;
+	} 
+	div.header
+	{
+	display:block;
+	}
+
+}
+
+/******************************************************************
+* LARGE VIEWING SIZE 
+* This is for the larger monitors and possibly full screen viewers.
+******************************************************************/
+@media only screen and (min-width: 1240px) {
+  
+
+}
+@media only screen and (max-width: 767px) {
+		#mobile-header {
+			display: block;
+		}
+		#navigation {
+			display: none;
+		}
+
+/******************************************************************
+* RETINA (2x RESOLUTION DEVICES)
+* This applies to the retina iPhone (4s) and iPad (2,3) along with 
+* other displays with a 2x resolution. You can also create a media
+* query for retina AND a certain size if you want. Go Nuts.
+******************************************************************/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+  
+
+}

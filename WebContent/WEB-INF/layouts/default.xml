@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="toothloop.base" template="/WEB-INF/templates/default.jsp">
+	
+		<put-attribute name="commonscripts"
+			value="/WEB-INF/tiles/global/commonscripts.jsp"></put-attribute>
+		<put-attribute name="commonstyles"
+			value="/WEB-INF/tiles/global/commonstyles.jsp"></put-attribute>
+		<put-attribute name="slidecontent"
+			value="/WEB-INF/tiles/default/slidecontent.jsp"></put-attribute>
+		<put-attribute name="mobilemenu"
+			value="/WEB-INF/tiles/global/mobilemenu.jsp"></put-attribute>
+		<put-attribute name="footer"
+			value="/WEB-INF/tiles/default/basefooter.jsp"></put-attribute>
+			
+	</definition>
+	<definition name="login" extends="toothloop.base">
+		<put-attribute name="slidecontent"
+			value="/WEB-INF/tiles/default/loginbody.jsp"></put-attribute>
+	</definition>
+	<definition name="newaccount" extends="toothloop.base">
+		<put-attribute name="slidecontent"
+			value="/WEB-INF/tiles/default/newaccountbody.jsp"></put-attribute>
+	</definition>
+	<definition name="accountcreated" extends="toothloop.base">
+		<put-attribute name="slidecontent"
+			value="/WEB-INF/tiles/default/accountcreatedbody.jsp"></put-attribute>
+	</definition>
+</tiles-definitions>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="admin" template="/WEB-INF/templates/admin.jsp">
+
+		<put-attribute name="commonscripts"
+			value="/WEB-INF/tiles/global/commonscripts.jsp"></put-attribute>
+		<put-attribute name="commonstyles"
+			value="/WEB-INF/tiles/global/commonstyles.jsp">
+		</put-attribute>
+		<put-attribute name="scriptplaceholder" value="">
+		</put-attribute>
+		<put-attribute name="styleplaceholder" value="">
+		</put-attribute>
+		<put-attribute name="adminstyle"
+			value="/WEB-INF/tiles/admin/adminstyles.jsp">
+		</put-attribute>
+		<put-attribute name="adminbody" value="/WEB-INF/tiles/admin/adminbody.jsp"></put-attribute>
+		<put-attribute name="mobilemenu"
+			value="/WEB-INF/tiles/global/mobilemenu.jsp"></put-attribute>
+		<put-attribute name="adminmenu" value="/WEB-INF/tiles/admin/adminmenu.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/tiles/basefooter.jsp"></put-attribute>
+	</definition>
+
+	<definition name="mycms" extends="admin">
+		<put-attribute name="adminbody" value="/WEB-INF/tiles/admin/mycms.jsp"></put-attribute>
+		<put-attribute name="adminmenu" value="/WEB-INF/tiles/admin/mycmsmenu.jsp"></put-attribute>
+	</definition>
+
+	<definition name="editentry" extends="admin">
+		<put-attribute name="adminbody"
+			value="/WEB-INF/tiles/admin/editentrybody.jsp"></put-attribute>
+		<put-attribute name="adminmenu"
+			value="/WEB-INF/tiles/admin/newentrymenu.jsp"></put-attribute>
+		<put-attribute name="scriptplaceholder"
+			value="/WEB-INF/tiles/admin/newentryscripts.jsp"></put-attribute>
+		<put-attribute name="styleplaceholder"
+			value="/WEB-INF/tiles/admin/newentrystyles.jsp"></put-attribute>
+	</definition>
+	<definition name="newentry" extends="admin">
+		<put-attribute name="adminbody"
+			value="/WEB-INF/tiles/admin/newentrybody.jsp"></put-attribute>
+		<put-attribute name="adminmenu"
+			value="/WEB-INF/tiles/admin/newentrymenu.jsp"></put-attribute>
+		<put-attribute name="scriptplaceholder"
+			value="/WEB-INF/tiles/admin/newentryscripts.jsp"></put-attribute>
+		<put-attribute name="styleplaceholder"
+			value="/WEB-INF/tiles/admin/newentrystyles.jsp"></put-attribute>
+
+	</definition>
+
+</tiles-definitions>

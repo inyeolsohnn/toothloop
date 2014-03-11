@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.4.0.201310051539-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/com/inyeolsohn/toothloop/config/dao-context.xml</config>
+		<config>WebContent/WEB-INF/toothloop-servlet.xml</config>
+		<config>src/com/inyeolsohn/toothloop/config/service-context.xml</config>
+		<config>src/com/inyeolsohn/toothloop/config/security-context.xml</config>
+		<config>test/com/inyeolsohn/toothloop/test/config/datasource.xml</config>
+	</configs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>
